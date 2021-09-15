@@ -25,11 +25,11 @@ import java.util.stream.Collectors;
  */
 public class StreamSummary<T> {
     
-     //public static String filename = "C:\\Users\\Hyae\\Documents\\kosarak.txt"; //real data
-     public static String filename = "C:\\Users\\Hyae\\Documents\\zipf125M.txt"; //synthetic data
+     //public static String filename = "C:\\Users\\kosarak.txt"; //real data
+     public static String filename = "C:\\Users\\zipf1.51.txt"; //synthetic data
      public static double a = 1.5; //skewness
-     private static double phi = 0.001;
-     private static double epsilon = phi/10;
+     private static double phi = 0.0004;
+     private static double epsilon = 0.001;
      private final int capacity; //number of counters
      private boolean guaranteed = true;
           
@@ -262,7 +262,7 @@ public class StreamSummary<T> {
         List<Counter<String>> topK = ss.queryTopK(10);
         System.out.println("TOP-K ELEMENTS");        
         for (Counter<String> c : topK) {            
-            System.out.println(c);
+            System.out.println(c.getValue());
         }
        
         Runtime runtime = Runtime.getRuntime();

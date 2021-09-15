@@ -22,7 +22,7 @@ public class ZipfGenerator {
         RandomEngine re = RandomEngine.makeDefault();       
         String[] input = new String[10000000];                
         try {
-        FileWriter f1 = new FileWriter("C:\\Users\\Hyae\\Documents\\Zipf1.5.txt", true);
+        FileWriter f1 = new FileWriter("C:\\Users\\Zipf1.5.txt", true);
         //Random r = new Random();
         for (int j=0; j<input.length; j++) {
             //String x = "a" + (r.nextInt(500000));

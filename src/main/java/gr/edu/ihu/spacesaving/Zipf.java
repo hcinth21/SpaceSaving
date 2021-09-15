@@ -15,7 +15,7 @@ public class Zipf {
     private static int size = (10000000);
     private static double skew = 0.5;
     private double bottom = 0;
-    public static String outputname = ("C:\\Users\\Hyae\\Documents\\Zipftest.txt");
+    public static String outputname = ("C:\\Users\\Zipftest.txt");
     
     public void zipfGen(int size, double skew) {
          this.size = size;
